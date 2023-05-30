@@ -15,7 +15,7 @@ const addMember = (id, pw, mail) => {
   console.log(memberDB.get(id));
 };
 
-const searchMember = () => {
+const searchMember = (id, pw) => {
   console.log("searchMember() CALLED!!");
 
   let memObj = memberDB.get(id);
@@ -34,14 +34,13 @@ const searchMember = () => {
 const addDiary = (txt) => {
   console.log("addDiary() CALLED!!");
 
-  let diaryArr = diaryDB.get(siginInedMemberId);
+  let diaryArr = diaryDB.get(signInedMemberId);
   diaryArr.push(txt);
 };
 
-const searchDiary = () => {
+const searchDiaries = () => {
   console.log("searchDiary() CALLED!!");
-  let diaryArr = diaryDB.get(siginInedMemberId);
-  diaryArr.push(txt);
+  let diaryArr = diaryDB.get(signInedMemberId);
   return diaryArr;
 };
 

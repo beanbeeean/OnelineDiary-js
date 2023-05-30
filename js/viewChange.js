@@ -2,7 +2,7 @@ const SIGN_UP_VIEW = 1;
 const SIGN_IN_VIEW = 2;
 const SIGN_OUT_VIEW = 3;
 const DIARY_WRITE_VIEW = 4;
-const DIARY_LIST_VIEW = 4;
+const DIARY_LIST_VIEW = 5;
 
 let signUpWrap = "";
 let signInWrap = "";
